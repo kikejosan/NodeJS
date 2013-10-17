@@ -50,6 +50,7 @@ console.log("escribiendo el archivo");
 */
 
 //watch archivos
+/*
 var fs=require("fs");
 console.log("inicio");
 var config=JSON.parse(fs.readFileSync("config.json"));
@@ -59,3 +60,4 @@ fs.watchFile("config.json",function(current,previous){
 	config=JSON.parse(fs.readFileSync("config.json"));
 	console.log("nuevo archivo",config);
 })
+*/
