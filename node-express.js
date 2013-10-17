@@ -39,7 +39,7 @@ app.listen(port,host);
 
 //3-Devolver los valores según un parámetro indicado
 //en la url
-
+/*
 var fs=require("fs");
 var config=JSON.parse(fs.readFileSync("config.json"));
 var host=config.host;
@@ -77,3 +77,4 @@ app.get("/user/:id",function(request,response){
 	response.send
 })
 app.listen(port,host);
+*/

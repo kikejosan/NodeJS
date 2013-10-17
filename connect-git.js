@@ -11,6 +11,8 @@ var options={
 	method:"GET"
 }
 
+console.log("inicio");
+
 var request=https.request(options,function(response){
 	var body="";
 	response.on("data",function(chunk){
@@ -21,6 +23,7 @@ var request=https.request(options,function(response){
 	})
 });
 request.end();
+console.log("fin");
 */
 
 //2- Filtrar el resultado para obtener solamente
@@ -85,8 +88,6 @@ request.end();
 /*
 var https=require("https");
 
-var username="jgallud";
-
 function getRepos(username,callback){
 
 	var options={
@@ -109,17 +110,23 @@ function getRepos(username,callback){
 					description:repo.description
 				});
 			});
-			//console.log("Repositorios:",repos);
+			console.log("Repositorios:",repos);
 			callback(repos);
-		})
+		});
+		response.on("error",function(error){
+			console.log("Error: ",error.message);
+		});
 	});
 	request.end();
-	}
-	getRepos("jgallud",function(repos){
+}
+
+getRepos("jgallud",function(repos){
 		console.log("jgallud tiene "+repos.length + " repositorios");
+		console.log("Repos=",repos);
 	});
 
-	getRepos("tesorieror",function(repos){
+getRepos("tesorieror",function(repos){
 		console.log("tesoriero tiene "+repos.length + " repositorios");
+		console.log("Repos=",repos);
 	});
-	*/
+*/
