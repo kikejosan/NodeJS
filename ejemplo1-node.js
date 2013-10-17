@@ -60,5 +60,4 @@ fs.watchFile("config.json",function(current,previous){
 	config=JSON.parse(fs.readFileSync("config.json"));
 	console.log("nuevo archivo",config);
 })
-<<<<<<< HEAD
 */
