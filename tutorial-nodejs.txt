@@ -1,0 +1,32 @@
+1. Instalar Node (nodejs.org)
+2. Directorio de trabajo para aplicaciones nodejs
+3. Examinar ejemplo-1.js
+4. Examinar servidor.js
+5. Examinar the Node Package Manager
+	 instalar npm install underscore -g
+	 actualizar módulos: npm update unserscore
+	 buscar módulos: npmjs.org
+	 instalar módulos: npm install nombre-module
+6. Instalar express
+	npm install express
+	node-express.js
+7. Conectar a GitHub
+	connect-git.js
+8. Fabricar módules
+	ejemplo-module.js
+	ej-modulo-server.js
+9. Publicar módulos en npm
+	crear package.json -> npm init
+	crear una cuenta en npm -> npm adduser
+	publicar módulo -> npm publish
+	cambiar la versión -> npm publish
+10. Mongodb
+	instalar mongo (mongodb.org)
+	npm install mongodb
+	comprobar servicio y consola
+	ejemplo1-mongo.js
+	ejemplo1-mongo-consulta.js
+	comprobar elementos desde consola mongo: show dbs / use nombre-db / show collections / db.user.find()
+	
+	Mongodb
+	ejemplo2-mongo-server.js (usamos la funcion getUser)
