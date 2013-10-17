@@ -19,16 +19,16 @@ console.log("archivo leído");
 */
 
 //leer fichero de configuracion
-/*
+
 var fs=require("fs");
 console.log("Inicio");
-var contenido=fs.readFileSync("config.json");
+var contenido=fs.readFileSync("config2.json");
 console.log("Contenidos "+contenido);
 
 var config=JSON.parse(contenido);
-console.log("config"+config);
-console.log("username="+config.username);
-*/
+console.log("config",config);
+console.log("username=",config.username);
+
 
 //2-escribir archivos
 //hay dos métodos, síncrono y asíncrono
@@ -50,6 +50,7 @@ console.log("escribiendo el archivo");
 */
 
 //watch archivos
+/*
 var fs=require("fs");
 console.log("inicio");
 var config=JSON.parse(fs.readFileSync("config.json"));
@@ -59,3 +60,4 @@ fs.watchFile("config.json",function(current,previous){
 	config=JSON.parse(fs.readFileSync("config.json"));
 	console.log("nuevo archivo",config);
 })
+*/

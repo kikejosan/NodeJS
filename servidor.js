@@ -1,12 +1,13 @@
 //visitar la documentacion nodejs.org
 
-/* Ejemplo 1
+// Ejemplo 1
+/*
 var http=require("http");
 console.log("Inicio");
 var host="127.0.0.1";
 var port=1337;
 var server=http.createServer(function(request,response){
-	console.log("Petición recibida:"+request.url);
+	console.log("Petición recibida: "+request.url);
 	response.writeHead(200,{"Content-type":"text/plain"});
 	response.end("Hola mundo");
 });
@@ -15,7 +16,10 @@ server.listen(port,host,function(){
 });
 */
 
-/* Ejemplo 2
+// Ejemplo 2
+//Para este ejemplo hay que crear un directorio public (/node/public)
+//e introducir en ese directorio un archivo html
+/*
 var http=require("http");
 var fs=require("fs");
 console.log("Inicio");
@@ -42,6 +46,7 @@ server.listen(port,host,function(){
 */
 
 //Ejemplo 3
+//Leemos la configuración (host y puerto) desde el archivo json (config.json)
 /*
 var http=require("http");
 var fs=require("fs");
