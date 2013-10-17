@@ -23,7 +23,7 @@ var config=JSON.parse(fs.readFileSync("config.json"));
 var host=config.host;
 var port=config.port;
 var exp=require("express");
-var app=exp(); //el tutorial indicaba exp.createServer()
+var app=exp(); 
 
 app.use(app.router);
 app.use(exp.static(__dirname + "/public"));
@@ -45,7 +45,7 @@ var config=JSON.parse(fs.readFileSync("config.json"));
 var host=config.host;
 var port=config.port;
 var exp=require("express");
-var app=exp(); //el tutorial indicaba exp.createServer()
+var app=exp(); 
 
 app.use(app.router);
 app.use(exp.static(__dirname + "/public"));
