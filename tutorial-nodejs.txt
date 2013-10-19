@@ -30,3 +30,5 @@
 	
 	Mongodb
 	ejemplo2-mongo-server.js (usamos la funcion getUser)
+11. Ejemplo para conectar al API de twitter: ejemplo-twitter.oath.js
+12. Insertar twits en la base de datos prueba: ej11-twitter-mongo.js
