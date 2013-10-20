@@ -4,6 +4,9 @@
 // 3- token access
 // 4- secret access token
 
+//Comprobar primero el funcionamiento sin MongoDB
+
+
 var OAuth = require('OAuth');
 var oauth = new OAuth.OAuth(
       'https://api.twitter.com/oauth/request_token',
@@ -14,11 +17,11 @@ var oauth = new OAuth.OAuth(
       null,
       'HMAC-SHA1'
     );
-/*
+
 var mongo=require("mongodb");
 var host="127.0.0.1";
 var port=mongo.Connection.DEFAULT_PORT;
-var db=new mongo.Db("prueba",new mongo.Server(host,port,{}));
+var db=new mongo.Db("prueba4",new mongo.Server(host,port,{}));
 
 var tweetCol;
 
@@ -30,10 +33,10 @@ db.open(function(error){
     tweetCol=col;
   });
 });
-*/
+
 
 //ejemplo stream
-/*
+
 var request = oauth.post(
   "https://stream.twitter.com/1.1/statuses/filter.json?track=bieber",
  '258725479-KUiuNk8H7MhrAMS64HvPQuTKevAYjgIkzDSlQT0b', 
@@ -42,14 +45,29 @@ var request = oauth.post(
 request.addListener('response', function (response) {
   response.setEncoding('utf8');
   response.addListener('data', function (chunk) {
+    var tweet=JSON.parse(chunk);
+    
+    tweetCol.insert(tweet,function(error){
+            if(error){
+              console.log("Hubo un error");
+            }
+            else{
+              console.log("Elemento insertado");
+            }
+          });
+    
+    /*
+    console.log("---");
     console.log(chunk);
+    console.log("---");
+    */
   });
   response.addListener('end', function () {
     console.log('--- END ---');
   });
 });
 request.end();
-*/
+
 
 //ejemplo get
 /*

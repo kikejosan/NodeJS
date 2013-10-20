@@ -11,7 +11,10 @@ app.get("/",function(request,response){
 		var ul="";
 		console.log("Obtener tweets");
 		tweets.forEach(function(tweet){
-			ul+="<li><strong>"+tweet.user.screen_name+": </strong>"+tweet.text +"</li>";
+			if(typeof(tweet.user)=="undefined")
+				ul+="<li><strong>No user</strong>"+tweet.text +"</li>";
+			else	
+				ul+="<li><strong>"+tweet.user.screen_name+": </strong>"+tweet.text +"</li>";
 		});
 		contenido=contenido.toString("utf8").replace("{{INITIAL_TWEETS}}",ul);
 		response.setHeader("Content-type","text/html");
@@ -23,7 +26,7 @@ app.listen(port,host);
 var mongo=require("mongodb");
 var host="127.0.0.1";
 var port=mongo.Connection.DEFAULT_PORT;
-var db=new mongo.Db("prueba",new mongo.Server(host,port,{}));
+var db=new mongo.Db("prueba4",new mongo.Server(host,port,{}));
 
 var tweetCol;
 
@@ -38,7 +41,7 @@ db.open(function(error){
 
 function getTweets(callback)
 {
-	tweetCol.find({},{"limit":5,"sort":{"_id":-1}},function(error,cursor){
+	tweetCol.find({},{"limit":10,"sort":{"_id":-1}},function(error,cursor){
 		cursor.toArray(function(error,tweets){
 			callback(tweets);
 		})
