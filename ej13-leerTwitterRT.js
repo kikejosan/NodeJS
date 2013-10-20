@@ -1,3 +1,9 @@
+// Este ejemplo integra los dos últimos ejemplos
+// por un lado leemos tweets con la palabra clave bieber y los insertamos en la base de datos
+// por otro lado leemos los 10 últimos tweets de la base de datos
+// para comprobar el funcionamiento hay que lanzar el navegador en localhost y refrescar
+// en la consola aparecerán las inserciones en la base de datos
+
 var fs=require("fs");
 var config=JSON.parse(fs.readFileSync("config.json"));
 var host=config.host;
