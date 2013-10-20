@@ -32,3 +32,5 @@
 	ejemplo2-mongo-server.js (usamos la funcion getUser)
 11. Ejemplo para conectar al API de twitter: ejemplo-twitter.oath.js
 12. Insertar twits en la base de datos prueba: ej11-twitter-mongo.js
+13. Leer twits de Mongo y publicarlos en la web: ej12-leerTwitsDeMongo.js
+14. Leer twits en tiempo real y publicarlos en la web
