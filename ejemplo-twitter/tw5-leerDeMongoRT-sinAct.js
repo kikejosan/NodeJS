@@ -12,7 +12,9 @@ var config=JSON.parse(fs.readFileSync("config.json"));
 var host=config.host;
 var port=config.port;
 var exp=require("express");
+var http=require("http");
 var app=exp(); //el tutorial indicaba exp.createServer()
+var server=http.createServer(app);
 
 app.get("/",function(request,response){
   var contenido=fs.readFileSync("./template.html");
@@ -30,8 +32,10 @@ app.get("/",function(request,response){
     response.send(contenido);
   })
 });
-app.listen(port,host);
-var io=require("socket.io").listen(app);
+
+//app.listen(port,host);
+var io=require("socket.io").listen(server);
+server.listen(port);
 
 
 var mongo=require("mongodb");
@@ -73,7 +77,7 @@ twit.stream('user', {track:'bieber'}, function(stream) {
     // Handle a 'silent' disconnection from Twitter, no end/error event fired
   });
   // Disconnect stream after five seconds
-  setTimeout(stream.destroy, 10000);
+ //setTimeout(stream.destroy, 10000);
 });
 
 
