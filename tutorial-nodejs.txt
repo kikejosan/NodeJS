@@ -1,26 +1,27 @@
 1. Instalar Node (nodejs.org)
 2. Directorio de trabajo para aplicaciones nodejs
-3. Examinar ejemplo-1.js
-4. Examinar servidor.js
-5. Examinar the Node Package Manager
+3. Instalar npm (si es necesario, ojo hay que agregar una carpeta llamada npm en \Users\usuario\AppData\Roaming)
+4. Examinar ejemplo-1.js
+5. Examinar servidor.js
+6. Examinar the Node Package Manager
 	 instalar npm install underscore -g
 	 actualizar módulos: npm update unserscore
 	 buscar módulos: npmjs.org
 	 instalar módulos: npm install nombre-module
-6. Instalar express
+7. Instalar express
 	npm install express
 	node-express.js
-7. Conectar a GitHub
+8. Conectar a GitHub
 	connect-git.js
-8. Fabricar módules
+9. Fabricar módules
 	ejemplo-module.js
 	ej-modulo-server.js
-9. Publicar módulos en npm
+10. Publicar módulos en npm
 	crear package.json -> npm init
 	crear una cuenta en npm -> npm adduser
 	publicar módulo -> npm publish
 	cambiar la versión -> npm publish
-10. Mongodb
+11. Mongodb
 	instalar mongo (mongodb.org)
 	npm install mongodb
 	comprobar servicio y consola
@@ -30,8 +31,8 @@
 	
 	Mongodb
 	ejemplo2-mongo-server.js (usamos la funcion getUser)
-11. Ejemplo para conectar al API de twitter: ejemplo-twitter/tw1.js
-12. Insertar twits en la base de datos prueba: ejemplo-twitter/tw2-mongo.js
-13. Leer twits de Mongo y publicarlos en la web: ejemplo-twitter/tw3-leerDeMongo.js.js
-14. Leer twits en tiempo real y publicarlos en la web: ejemplo-twitter/tw4-leerDeMongoRT.js
-15. Igual que el ejemplo 14 pero sin necesidad de actualizar: ejemplo-twitter/tw5-leerDeMongoRT-sinAct.js
+12. Ejemplo para conectar al API de twitter: ejemplo-twitter/tw1.js
+13. Insertar twits en la base de datos prueba: ejemplo-twitter/tw2-mongo.js
+14. Leer twits de Mongo y publicarlos en la web: ejemplo-twitter/tw3-leerDeMongo.js.js
+15. Leer twits en tiempo real y publicarlos en la web: ejemplo-twitter/tw4-leerDeMongoRT.js
+16. Igual que el ejemplo 14 pero sin necesidad de actualizar: ejemplo-twitter/tw5-leerDeMongoRT-sinAct.js
