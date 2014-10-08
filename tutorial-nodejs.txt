@@ -1,6 +1,6 @@
 1. Instalar Node (nodejs.org)
 2. Directorio de trabajo para aplicaciones nodejs
-3. Instalar npm (si es necesario, ojo hay que agregar una carpeta llamada npm en \Users\usuario\AppData\Roaming)
+3. Instalar npm (si fuera necesario, ojo puede que en Windows haya que agregar una carpeta llamada npm en \Users\nombre-usuario\AppData\Roaming)
 4. Examinar ejemplo1-node.js y realizar en orden todos los ejemplos
 5. Examinar servidor.js y realizar en orden todos los ejemplos
 6. Examinar the Node Package Manager
