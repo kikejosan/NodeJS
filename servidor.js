@@ -47,6 +47,7 @@ server.listen(port,host,function(){
 
 //Ejemplo 3
 //Leemos la configuración (host y puerto) desde el archivo json (config.json)
+//prueba modificar la configuracion
 /*
 var http=require("http");
 var fs=require("fs");

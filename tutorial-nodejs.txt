@@ -10,10 +10,10 @@
 	 instalar módulos: npm install nombre-module
 7. Instalar express
 	npm install express
-	node-express.js
+	Realizar todos los ejemplos del archivo node-express.js
 8. Conectar a GitHub
-	connect-git.js
-9. Fabricar módules
+	Realizar los ejemplos del archivo connect-git.js
+9. Fabricar módulos
 	ejemplo-module.js
 	ej-modulo-server.js
 10. Publicar módulos en npm

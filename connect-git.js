@@ -8,7 +8,8 @@ var username="jgallud";
 var options={
 	host:"api.github.com",
 	path:"/users/"+username+"/repos",
-	method:"GET"
+	method:"GET",
+	headers: {'user-agent': 'node.js'}
 }
 
 console.log("inicio");
@@ -36,7 +37,8 @@ var username="jgallud";
 var options={
 	host:"api.github.com",
 	path:"/users/"+username+"/repos",
-	method:"GET"
+	method:"GET",
+	headers: {'user-agent': 'node.js'}
 }
 
 var request=https.request(options,function(response){
@@ -52,7 +54,8 @@ var request=https.request(options,function(response){
 request.end();
 */
 
-//3-
+//3-Este ejemplo crea una coleccion llamada repos donde vamos a introducir
+//solamente el nombre y la descripcion de cada repositorio
 /*
 var https=require("https");
 
@@ -61,7 +64,8 @@ var username="jgallud";
 var options={
 	host:"api.github.com",
 	path:"/users/"+username+"/repos",
-	method:"GET"
+	method:"GET",
+	headers: {'user-agent': 'node.js'}
 }
 
 var request=https.request(options,function(response){
@@ -93,7 +97,8 @@ function getRepos(username,callback){
 	var options={
 		host:"api.github.com",
 		path:"/users/"+username+"/repos",
-		method:"GET"
+		method:"GET",
+		headers: {'user-agent': 'node.js'}
 	}
 
 	var request=https.request(options,function(response){

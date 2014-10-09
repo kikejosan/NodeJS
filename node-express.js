@@ -7,16 +7,18 @@ var port=config.port;
 var exp=require("express");
 var app=exp(); //el tutorial indicaba exp.createServer()
 
-app.use(app.router);
+//app.use(app.router);
 app.use(exp.static(__dirname + "/public"));
 
 app.get("/",function(request,response){
 	response.send("hola");
 });
+console.log("Servidor escuchando en "+host+":"+port);
 app.listen(port,host);
 */
 
-//2- Devolver la cadena indicada en la url
+//2- Devolver la cadena indicada en la url con
+//este formato /hola/juanito
 /*
 var fs=require("fs");
 var config=JSON.parse(fs.readFileSync("config.json"));
@@ -25,7 +27,7 @@ var port=config.port;
 var exp=require("express");
 var app=exp(); 
 
-app.use(app.router);
+//app.use(app.router);
 app.use(exp.static(__dirname + "/public"));
 
 app.get("/",function(request,response){
@@ -34,11 +36,14 @@ app.get("/",function(request,response){
 app.get("/hola/:text",function(request,response){
 	response.send("Hola "+request.params.text);
 });
+console.log("Servidor escuchando en "+host+":"+port);
 app.listen(port,host);
 */
 
 //3-Devolver los valores según un parámetro indicado
 //en la url
+//Puedes utilizar console.log para que el servidor muestre mensajes
+//Observa que el servidor acepta tres rutas / /hola/pepito y /user/numero
 /*
 var fs=require("fs");
 var config=JSON.parse(fs.readFileSync("config.json"));
@@ -47,7 +52,7 @@ var port=config.port;
 var exp=require("express");
 var app=exp(); 
 
-app.use(app.router);
+//app.use(app.router);
 app.use(exp.static(__dirname + "/public"));
 
 app.get("/",function(request,response){
