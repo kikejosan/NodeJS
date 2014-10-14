@@ -35,4 +35,4 @@
 13. Insertar twits en la base de datos prueba: ejemplo-twitter/tw2-mongo.js
 14. Leer twits de Mongo y publicarlos en la web: ejemplo-twitter/tw3-leerDeMongo.js.js
 15. Leer twits en tiempo real y publicarlos en la web: ejemplo-twitter/tw4-leerDeMongoRT.js
-16. Igual que el ejemplo 14 pero sin necesidad de actualizar: ejemplo-twitter/tw5-leerDeMongoRT-sinAct.js
+16. Igual que el ejemplo anterior pero sin necesidad de actualizar: ejemplo-twitter/tw5-leerDeMongoRT-sinAct.js
