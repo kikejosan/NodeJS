@@ -28,9 +28,9 @@
 	ejemplo1-mongo.js
 	ejemplo1-mongo-consulta.js
 	comprobar elementos desde consola mongo: show dbs / use nombre-db / show collections / db.user.find()
-	
-	Mongodb
 	ejemplo2-mongo-server.js (usamos la funcion getUser)
+
+(Para los siguientes ejemplos se utiliza la libreria ntwitter. Consulta el API en https://github.com/AvianFlu/ntwitter)
 12. Ejemplo para conectar al API de twitter: ejemplo-twitter/tw1.js
 13. Insertar twits en la base de datos prueba: ejemplo-twitter/tw2-mongo.js
 14. Leer twits de Mongo y publicarlos en la web: ejemplo-twitter/tw3-leerDeMongo.js.js
