@@ -5,7 +5,7 @@
 5. Examinar servidor.js y realizar en orden todos los ejemplos
 6. Examinar the Node Package Manager
 	 instalar npm install underscore -g
-	 actualizar módulos: npm update unserscore
+	 actualizar módulos: npm update underscore
 	 buscar módulos: npmjs.org
 	 instalar módulos: npm install nombre-module
 7. Instalar express
